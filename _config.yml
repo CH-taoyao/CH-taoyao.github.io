@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 昊哥
+subtitle: 'myblog'
+description: '我的小站点'
 keywords:
-author: John Doe
-language: en
+author: CH
+language: zh-CN
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 url: http://example.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:ch/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -32,7 +32,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year/:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -158,10 +158,10 @@ theme_config:
     # ---------------------------------------------------------------
 
     favicon:
-      small: /images/favicon-16x16-next.png
-      medium: /images/favicon-32x32-next.png
-      apple_touch_icon: /images/apple-touch-icon-next.png
-      safari_pinned_tab: /images/logo.svg
+      small: /images/favicon-16x16.png
+      medium: /images/favicon-32x32.png
+      apple_touch_icon: /images/apple-touch-icon.png
+      safari_pinned_tab: /images/safari-pinned-tab.svg
       #android_manifest: /manifest.json
 
     # Custom Logo (Warning: Do not support scheme Mist)
@@ -188,7 +188,7 @@ theme_config:
     # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
     # External url should start with http:// or https://
     menu:
-      #home: / || fa fa-home
+      home: / || fa fa-home
       #about: /about/ || fa fa-user
       #tags: /tags/ || fa fa-tags
       #categories: /categories/ || fa fa-th
@@ -233,11 +233,11 @@ theme_config:
     # Sidebar Avatar
     avatar:
       # Replace the default image and set the url here.
-      url: #/images/avatar.gif
+      url: /images/favicon.ico
       # If true, the avatar will be dispalyed in circle.
-      rounded: false
+      rounded: true
       # If true, the avatar will be rotated with the cursor.
-      rotated: false
+      rotated: true
 
     # Posts / Categories / Tags in sidebar.
     site_state: true
@@ -247,8 +247,8 @@ theme_config:
     # Key is the link label showing to end users.
     # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
     social:
-      #GitHub: https://github.com/yourname || fab fa-github
-      #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+      GitHub: https://github.com/CH-taoyao || fab fa-github
+      E-Mail: mailto:2096135008@qq.com || fa fa-envelope
       #Weibo: https://weibo.com/yourname || fab fa-weibo
       #Google: https://plus.google.com/yourname || fab fa-google
       #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -313,15 +313,15 @@ theme_config:
         # Icon name in Font Awesome. See: https://fontawesome.com/icons
         name: fa fa-heart
         # If you want to animate the icon, set it to true.
-        animated: false
+        animated: true
         # Change the color of icon, using Hex Code.
         color: "#ff0000"
 
       # If not defined, `author` from Hexo `_config.yml` will be used.
-      copyright:
+      copyright: CH
 
       # Powered by Hexo & NexT
-      powered: true
+      powered: false
 
       # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
       beian:
@@ -369,12 +369,12 @@ theme_config:
     # Front-matter variable (unsupport animation).
     reward_settings:
       # If true, a donate button will be displayed in every article by default.
-      enable: false
+      enable: true
       animation: false
-      #comment: Buy me a coffee
+      comment: 🥤 赏杯饮料~
 
     reward:
-      #wechatpay: /images/wechatpay.png
+      wechatpay: /images/favicon.ico
       #alipay: /images/alipay.png
       #paypal: /images/paypal.png
       #bitcoin: /images/bitcoin.png
