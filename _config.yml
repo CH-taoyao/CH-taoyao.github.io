@@ -302,7 +302,7 @@ theme_config:
     # ---------------------------------------------------------------
 
     # Show multilingual switcher in footer.
-    language_switcher: false
+    language_switcher: false 
 
     footer:
       # Specify the year when the site was setup. If not defined, current year will be used.
@@ -935,7 +935,7 @@ theme_config:
     # Canvas ribbon
     # For more information: https://github.com/hustcc/ribbon.js
     canvas_ribbon:
-      enable: false
+      enable: true 
       size: 300 # The width of the ribbon
       alpha: 0.6 # The transparency of the ribbon
       zIndex: -1 # The display level of the ribbon
@@ -968,8 +968,7 @@ theme_config:
 
       # Font Awesome
       # For more information: https://fontawesome.com
-      fontawesome:
-
+      fontawesome:  
       # Prism
       prism:
       prism_autoloader:
@@ -1042,3 +1041,4 @@ theme_config:
     js: js
     images: images
  
+
