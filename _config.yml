@@ -5,7 +5,7 @@
 # Site
 title: 昊哥
 subtitle: 'myblog'
-description: '我的小站点'
+description: '我的小世界'
 keywords:
 author: CH
 language: zh-CN
@@ -189,13 +189,13 @@ theme_config:
     # External url should start with http:// or https://
     menu:
       home: / || fa fa-home
-      #about: /about/ || fa fa-user
-      #tags: /tags/ || fa fa-tags
-      #categories: /categories/ || fa fa-th
-      #archives: /archives/ || fa fa-archive
-      #schedule: /schedule/ || fa fa-calendar
-      #sitemap: /sitemap.xml || fa fa-sitemap
-      #commonweal: /404/ || fa fa-heartbeat
+      about: /about/ || fa fa-user
+      tags: /tags/ || fa fa-tags
+      categories: /categories/ || fa fa-th
+      archives: /archives/ || fa fa-archive
+      schedule: /schedule/ || fa fa-calendar
+      sitemap: /sitemap.xml || fa fa-sitemap
+      commonweal: /404/ || fa fa-heartbeat
 
     # Enable / Disable menu icons / item badges.
     menu_settings:
@@ -233,7 +233,7 @@ theme_config:
     # Sidebar Avatar
     avatar:
       # Replace the default image and set the url here.
-      url: /images/favicon.ico
+      url: /images/1.jpg
       # If true, the avatar will be dispalyed in circle.
       rounded: true
       # If true, the avatar will be rotated with the cursor.
@@ -370,12 +370,12 @@ theme_config:
     reward_settings:
       # If true, a donate button will be displayed in every article by default.
       enable: true
-      animation: false
+      animation: true
       comment: 🥤 赏杯饮料~
 
     reward:
-      wechatpay: /images/favicon.ico
-      #alipay: /images/alipay.png
+      wechatpay: /images/2.jpg
+      alipay: /images/3.jpg
       #paypal: /images/paypal.png
       #bitcoin: /images/bitcoin.png
 
