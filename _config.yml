@@ -152,7 +152,6 @@ theme_config:
     # Dark Mode
     darkmode: false
 
-
     # ---------------------------------------------------------------
     # Site Information Settings
     # ---------------------------------------------------------------
@@ -480,11 +479,11 @@ theme_config:
       # Back to top in sidebar.
       sidebar: false
       # Scroll percent label in b2t button.
-      scrollpercent: false
+      scrollpercent: true
 
     # Reading progress bar
     reading_progress:
-      enable: false
+      enable: true
       # Available values: top | bottom
       position: top
       color: "#37c6c0"
