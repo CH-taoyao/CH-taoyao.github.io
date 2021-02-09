@@ -136,7 +136,7 @@ theme_config:
       #bodyEnd: source/_data/body-end.njk
       #variable: source/_data/variables.styl
       #mixin: source/_data/mixins.styl
-      #style: source/_data/styles.styl
+      style: source/_data/styles.styl
 
 
     # ---------------------------------------------------------------
@@ -809,7 +809,7 @@ theme_config:
     # Show Views / Visitors of the website / page with busuanzi.
     # For more information: http://ibruce.info/2015/04/04/busuanzi/
     busuanzi_count:
-      enable: false
+      enable: true
       total_visitors: true
       total_visitors_icon: fa fa-user
       total_views: true
