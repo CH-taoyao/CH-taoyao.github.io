@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 昊哥
+title: CH’s World
 subtitle: 'myblog'
 description: '我的小世界'
 keywords:
@@ -104,6 +104,15 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+# 本地搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 100
+#path：索引文件的路径，相对于站点根目录
+#field：搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面
+#limit：限制搜索的条目数  
  
 theme_config: 
     # ===============================================================
@@ -133,7 +142,7 @@ theme_config:
       #postMeta: source/_data/post-meta.njk
       #postBodyEnd: source/_data/post-body-end.njk
       #footer: source/_data/footer.njk
-      #bodyEnd: source/_data/body-end.njk
+      bodyEnd: source/_data/body-end.njk
       #variable: source/_data/variables.styl
       #mixin: source/_data/mixins.styl
       style: source/_data/styles.styl
@@ -191,7 +200,7 @@ theme_config:
       about: /about/ || fa fa-user
       tags: /tags/ || fa fa-tags
       categories: /categories/ || fa fa-th
-      archives: /archives/ || fa fa-archive
+     # archives: /archives/ || fa fa-archive
      # schedule: /schedule/ || fa fa-calendar
       #sitemap: /sitemap.xml || fa fa-sitemap
       #commonweal: /404/ || fa fa-heartbeat
@@ -232,7 +241,7 @@ theme_config:
     # Sidebar Avatar
     avatar:
       # Replace the default image and set the url here.
-      url: /images/1.jpg
+      url: /images/5.jpg
       # If true, the avatar will be dispalyed in circle.
       rounded: true
       # If true, the avatar will be rotated with the cursor.
@@ -288,7 +297,7 @@ theme_config:
     # A button to open designated chat widget in sidebar.
     # Firstly, you need enable the chat service you want to activate its sidebar button.
     chat:
-      enable: false
+      enable: true
       #service: chatra
       #service: tidio
       icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
@@ -301,7 +310,7 @@ theme_config:
     # ---------------------------------------------------------------
 
     # Show multilingual switcher in footer.
-    language_switcher: false 
+    language_switcher: true 
 
     footer:
       # Specify the year when the site was setup. If not defined, current year will be used.
@@ -314,7 +323,7 @@ theme_config:
         # If you want to animate the icon, set it to true.
         animated: true
         # Change the color of icon, using Hex Code.
-        color: "#ff0000"
+        color: "#808080"
 
       # If not defined, `author` from Hexo `_config.yml` will be used.
       copyright: CH
@@ -470,7 +479,8 @@ theme_config:
         dark: prism-dark
       # Add copy button on codeblock
       copy_button:
-        enable: false
+        enable: true
+        show_result: true        
         # Available values: default | flat | mac
         style:
 
@@ -833,7 +843,7 @@ theme_config:
     # Local Search
     # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
     local_search:
-      enable: false
+      enable: true
       # If auto, trigger search by changing input.
       # If manual, trigger search by pressing enter key or search button.
       trigger: auto
@@ -1040,4 +1050,12 @@ theme_config:
     js: js
     images: images
  
-
+    # 鼠标点击特效
+    # mouse click effect: fireworks | explosion | love/text
+    cursor_effect: explosion  
+    
+    # 打字特效
+    # typing effect
+    typing_effect:
+      colorful: true  # 礼花特效
+      shake: true    # 震动特效
