@@ -112,7 +112,15 @@ search:
   limit: 100
 #path：索引文件的路径，相对于站点根目录
 #field：搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面
-#limit：限制搜索的条目数  
+#limit：限制搜索的条目数
+symbols_count_time:
+#文章内是否显示
+    symbols: true
+    time: true
+# 网页底部是否显示
+    total_symbols: true
+    total_time: true
+  
  
 theme_config: 
     # ===============================================================
@@ -368,7 +376,10 @@ theme_config:
     # Dependencies: https://github.com/next-theme/hexo-word-counter
     symbols_count_time:
       separated_meta: true
-      item_text_total: false
+      item_text_total: true # 底部footer是否显示字数统计属性文字
+      item_text_post: true  # 显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字   
+      awl: 4                # 计算字数的一个设置,没设置过
+      wpm: 275              # 一分钟阅读的字数
 
     # Use icon instead of the symbol # to indicate the tag at the bottom of the post
     tag_icon: false
@@ -1052,10 +1063,11 @@ theme_config:
  
     # 鼠标点击特效
     # mouse click effect: fireworks | explosion | love/text
-    cursor_effect: explosion  
+    cursor_effect: love  
     
     # 打字特效
     # typing effect
     typing_effect:
       colorful: true  # 礼花特效
       shake: true    # 震动特效
+      
