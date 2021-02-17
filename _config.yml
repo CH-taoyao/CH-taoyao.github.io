@@ -376,7 +376,7 @@ theme_config:
     # Dependencies: https://github.com/next-theme/hexo-word-counter
     symbols_count_time:
       separated_meta: true
-      item_text_total: true # 底部footer是否显示字数统计属性文字
+      item_text_total: false # 底部footer是否显示字数统计属性文字
       item_text_post: true  # 显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字   
       awl: 4                # 计算字数的一个设置,没设置过
       wpm: 275              # 一分钟阅读的字数
@@ -1070,4 +1070,4 @@ theme_config:
     typing_effect:
       colorful: true  # 礼花特效
       shake: true    # 震动特效
-      
+     
