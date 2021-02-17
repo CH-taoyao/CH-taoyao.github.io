@@ -1,3 +1,6 @@
 [submodule "themes/next"]
 	path = themes/next
 	url = https://github.com/next-theme/hexo-theme-next
+[submodule "source/lib/live2d-widget"]
+	path = source/lib/live2d-widget
+	url = https://github.com/stevenjoezhang/live2d-widget.git
