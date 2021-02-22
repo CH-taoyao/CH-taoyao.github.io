@@ -208,10 +208,10 @@ theme_config:
       about: /about/ || fa fa-user
       tags: /tags/ || fa fa-tags
       categories: /categories/ || fa fa-th
-     # archives: /archives/ || fa fa-archive
-     # schedule: /schedule/ || fa fa-calendar
-      #sitemap: /sitemap.xml || fa fa-sitemap
-      #commonweal: /404/ || fa fa-heartbeat
+    # archives: /archives/ || fa fa-archive
+    # schedule: /schedule/ || fa fa-calendar
+    #sitemap: /sitemap.xml || fa fa-sitemap
+    #commonweal: /404/ || fa fa-heartbeat
 
     # Enable / Disable menu icons / item badges.
     menu_settings:
@@ -305,7 +305,7 @@ theme_config:
     # A button to open designated chat widget in sidebar.
     # Firstly, you need enable the chat service you want to activate its sidebar button.
     chat:
-      enable: false 
+      enable: true 
       #service: chatra
       #service: tidio
       icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
@@ -318,7 +318,7 @@ theme_config:
     # ---------------------------------------------------------------
 
     # Show multilingual switcher in footer.
-    language_switcher: true 
+    language_switcher: false  
 
     footer:
       # Specify the year when the site was setup. If not defined, current year will be used.
