@@ -4,8 +4,8 @@ top: false
 date: 2021-02-08 14:50:15
 ch:
 summary:
-tags:
-categories:
+tags: [hexo]
+categories: [关于主题]
 ---
 
 - 折腾主题是 Hexo 的最大原罪。专注于创作，而不是令人眼花缭乱的效果。名家之博，不假于主题之花哨，而得知于内容；
