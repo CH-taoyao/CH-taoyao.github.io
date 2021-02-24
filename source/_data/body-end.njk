@@ -16,3 +16,9 @@
   <script src="/js/tags.js"></script>
 {% else %}
 {% endif %}
+
+
+{# 如果配置文件中打开ribbon_flow，那么就引入js实现动态背景 #}
+{%- if theme.ribbon_flow.enable %}
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/WillCAI2020/cdn/js/ribbon_flow.js"></script>
+{%- endif %}
