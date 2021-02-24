@@ -41,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -305,7 +305,7 @@ theme_config:
     # A button to open designated chat widget in sidebar.
     # Firstly, you need enable the chat service you want to activate its sidebar button.
     chat:
-      enable: true 
+      enable: false     #我也不造咋搞 
       #service: chatra
       #service: tidio
       icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
@@ -381,8 +381,8 @@ theme_config:
       awl: 4                # 计算字数的一个设置,没设置过
       wpm: 275              # 一分钟阅读的字数
 
-    # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-    tag_icon: false
+    # Use icon instead of the symbol # to indicate the tag at the bottom of the post    就是不用#
+    tag_icon: true
 
     # Donate (Sponsor) settings
     # Front-matter variable (unsupport animation).
@@ -438,8 +438,8 @@ theme_config:
 
     # TagCloud settings for tags page.
     tagcloud:
-      min: 12 # Minimun font size in px
-      max: 30 # Maxium font size in px
+      min: 15 # Minimun font size in px 最小
+      max: 25 # Maxium font size in px 最大
       amount: 200 # Total amount of tags
       orderby: name # Order of tags
       order: 1 # Sort order
@@ -940,8 +940,8 @@ theme_config:
       transition:
         # All available transition variants: https://theme-next.js.org/animate/
         post_block: fadeIn
-        post_header: fadeInDown
-        post_body: fadeInDown
+        post_header: slideDownIn
+        post_body: zoomIn
         coll_header: fadeInLeft
         # Only for Pisces | Gemini.
         sidebar: fadeInUp

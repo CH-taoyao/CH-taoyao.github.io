@@ -1,3 +1,6 @@
+
+
+/* body 样式 */
 body {
     background:url(/images/4.jpg);
     background-repeat: no-repeat;
@@ -6,28 +9,171 @@ body {
     background-position:50% 50%;
 }
 
-//博客内容透明化
-//文章内容的透明度设置
-.content-wrap {
-  opacity: 0.9;
-}
-
-//侧边框的透明度设置
-.sidebar {
-  opacity: 0.9;
-}
-
-//菜单栏的透明度设置
-.header-inner {
-  background: rgba(255,255,255,0.9);
-}
-
-//搜索框（local-search）的透明度设置
-.popup {
-  opacity: 0.9;
-}
-
-
+/* 底部颜色 */
 .footer {
    color: #161515;//颜色
 }
+
+// 粒子时钟样式
+.site-overview {
+  text-align: center;
+}
+
+canvas#canvas {
+  margin-top: 20px;
+}
+
+/* 主题透明度 */
+.main-inner{
+	background-color: rgba(255,255,255,0.5);
+}
+/* 文章块透明度 */
+.post .post-block{
+	opacity: 0.7;
+}
+/* 想要仅仅文章页面post-block透明*/
+
+
+/****************************************/
+/*************标签页面 begin*************/
+/****************************************/
+/*彩色标签页面*/
+.tag-cloud {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: #797D7F;
+    padding: 20px 30px 40px 30px;
+    border-radius: 25px 25px 25px 25px;
+}
+.tag-cloud-title {
+    font-family: Impact;
+    font-size: 24px;
+    color: aqua;
+	margin-bottom: 36px;
+}
+
+.tag-cloud-tags{
+  /*font-family: Helvetica, Tahoma, Arial;*/
+  /*font-weight: 100;*/
+  text-align: center;
+  counter-reset: tags;
+  margin-bottom: 24px;
+}
+.tag-cloud-tags a{
+  border-radius: 6px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 8px 5px 0px 0px;
+  color: white;
+}
+.tag-cloud-tags a:before{
+  content: "🔖";
+}
+
+.tag-cloud-tags a:hover{
+   box-shadow: 0px 5px 15px 0px rgba(0,0,0,.4);
+   color: aqua !important;
+   transform: scale(1.1);
+   /*box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);*/
+   transition-duration: 0.15s;
+}
+
+
+/*文章底部标签样式*/
+.posts-expand .post-tags a {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  font-family: Acme, sans-serif;
+  transition: .2s ease-out;
+  padding: 3px 5px;
+  margin: 5px;
+  background: #f5f5f5;
+  border-bottom: none;
+  border-radius: 15px;
+
+  +mobile(){
+    padding: 1px 3px;
+    font-size: 8px;
+  }
+
+  &:hover {
+    background: rgba(100,154,182,0.902);
+    color: #fff !important;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+}
+/****************************************/
+/*************标签页面 end***************/
+/****************************************/
+
+/****************************************/
+/*************分类页面 begin*************/
+/****************************************/
+.category-all-page {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: #797D7F;
+    padding: 20px 30px 40px 30px;
+    border-radius: 25px 25px 25px 25px;
+}
+.category-all-title {
+    font-family: Impact;
+    font-size: 24px;
+    color: aqua;
+}
+//数字
+.category-list-count{
+	color: aqua !important;
+}
+//限制电脑
++tablet-desktop() {
+  .category-list-item {
+    margin: 10px 12px;
+  }
+
+  ul.category-list {
+    text-align: center;
+  }
+
+  li.category-list-item {
+    display: inline-block;
+  }
+
+  li.category-list-item a {
+    line-height: 5;
+    word-break: keep-all;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: white;
+    background: #4a3b4a;
+    border-bottom: none;
+    border-radius: 15px;
+    btn-shadow();
+
+    &:hover {
+	  color: aqua;
+      text-decoration: none;
+	  border-bottom: none;
+    }
+  }
+}
+
++mobile() {
+  .category-all-page .category-list-item {
+    margin: 10px 40px;
+  }
+  
+  li.category-list-item a {
+	color: white;
+  }
+
+  .category-all-page .category-all ul {
+    list-style-type: disc;
+  }
+}
+/****************************************/
+/*************分类页面 end***************/
+/****************************************/
+
+
